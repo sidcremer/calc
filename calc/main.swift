@@ -1,6 +1,5 @@
 import Foundation
 
-var answers: [Int]
 let equation = readLine();
 var containsBodmas = false
 var equationArray = equation!.components(separatedBy: " ")
@@ -94,7 +93,7 @@ while equationArray.count > 2 {
     
     if equationArray.count == 3 {
         
-        print(calculate(operator1: equationArray[1], integer1: Int(equationArray[0])!, integer2: Int(equationArray[2])!))
+        print(String(calculate(operator1: equationArray[1], integer1: Int(equationArray[0])!, integer2: Int(equationArray[2])!)))
         exit(1)
         
     }
